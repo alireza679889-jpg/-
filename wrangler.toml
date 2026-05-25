@@ -4,7 +4,7 @@ compatibility_date = "2026-05-25"
 
 [[kv_namespaces]]
 binding = "SEEN_CONFIGS"
-id = "PUT_KV_ID_HERE"
+id = "343d59ec7b304ee5b8e8e519b4112a57"
 
 [vars]
 TARGET_CHAT_ID = "@YourChannelUsername"
