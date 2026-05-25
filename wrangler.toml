@@ -1,0 +1,11 @@
+name = "@freeConfigForIran232"
+main = "src/index.ts"
+compatibility_date = "2026-05-25"
+
+[[kv_namespaces]]
+binding = "SEEN_CONFIGS"
+id = "PUT_KV_ID_HERE"
+
+[vars]
+TARGET_CHAT_ID = "@YourChannelUsername"
+SOURCE_CHAT_IDS = "-1001234567890"
