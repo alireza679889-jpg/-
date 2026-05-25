@@ -1,4 +1,4 @@
-name = "@freeConfigForIran232"
+name = "free-config-for-iran-232"
 main = "src/index.ts"
 compatibility_date = "2026-05-25"
 
@@ -7,5 +7,5 @@ binding = "SEEN_CONFIGS"
 id = "343d59ec7b304ee5b8e8e519b4112a57"
 
 [vars]
-TARGET_CHAT_ID = "free-config-for-iran-232"
+TARGET_CHAT_ID = -1001947988075""
 SOURCE_CHAT_IDS = "-1003670464424"
