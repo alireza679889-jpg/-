@@ -1,4 +1,4 @@
-name: Deploy Telegram Config Bot
+name: Deploy Worker
 
 on:
   push:
@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -21,14 +21,7 @@ jobs:
       - name: Install Wrangler
         run: npm install -g wrangler
 
-      - name: Publish BOT_TOKEN Secret
-        run: |
-          echo "${{ secrets.BOT_TOKEN }}" | wrangler secret put BOT_TOKEN
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-
-      - name: Deploy Worker
+      - name: Deploy
         run: wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
